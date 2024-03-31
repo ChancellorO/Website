@@ -74,18 +74,6 @@ export const skills = [
         icon: "logos:nodejs-icon",
       },
       {
-        name: "PHP",
-        icon: "logos:php",
-      },
-      {
-        name: "Laravel",
-        icon: "logos:laravel",
-      },
-      {
-        name: "Symfony",
-        icon: "logos:symfony",
-      },
-      {
         name: "Python",
         icon: "logos:python",
       },
@@ -125,14 +113,6 @@ export const skills = [
         name: "Docker",
         icon: "logos:docker-icon",
       },
-      {
-        name: "Jenkins",
-        icon: "devicon:jenkins",
-      },
-      {
-        name: "Shopify",
-        icon: "logos:shopify",
-      },    
 
 ] as const;
 

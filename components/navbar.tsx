@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Navbar() {
     return(
         <header className="z-[999] relative">
-            <nav className="flex fixed justify-between p-4 px-96 w-screen shadow-lg bg-zinc-900 dark:bg-opacity-75 backdrop-blur-[0.5rem]">
+            <nav className="flex fixed justify-between p-4 px-64 w-screen shadow-lg bg-zinc-900 dark:bg-opacity-75 backdrop-blur-[0.5rem]">
                 <h1 className="text-3xl">
                     <Link href="#top">
                         {"<"}Chancellor Richey{"/>"}
@@ -31,11 +31,6 @@ export default function Navbar() {
                     <li>
                         <Link href="#skills">
                             skills
-                        </Link>                        
-                    </li>
-                    <li>
-                        <Link href="#contact">
-                            contact
                         </Link>                        
                     </li>
                 </ul>

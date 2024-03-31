@@ -3,19 +3,91 @@ import Image from "next/image";
 import introPhoto from "@/public/intro.jpg";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import Button from "react-bootstrap/Button";
 import Typewriter from "typewriter-effect";
+import { MdEmail } from "react-icons/md";
+import { SocialIcon } from 'react-social-icons';
 
 export default function Intro() {
     return(
         <section
             id="home"
-            className="mb-20"
+            className="mb-20 px-48"
         >
-            <div
-            className="flex justify-between"
-            >
-                <div className="flex flex-col items-center justify-center">
-                    <h1 className="text-center text-5xl">
+            <div className="flex flex-row-reverse justify-between">
+                <div
+                className="flex flex-col items-center justify-center"
+                >
+                        <div
+                            className="relative"
+                        >
+                        <motion.div
+                            className="w-[30vmin]"
+                            initial={{ opacity: 0, scale: 0 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{
+                                type: "spring",
+                                duration: 0.7,
+                                delay: 1,
+                            }}
+                        >
+                            <Image
+                                src={introPhoto}
+                                alt="intro photo"
+                                height="828"
+                                width="1472"
+                                className="mt-5 shadow-xl shadow-zinc-700 object-cover rounded-xl"
+                            />
+                        <motion.div
+                            className="absolute top-0 right-0 text-5xl"                
+                            initial={{
+                                opacity: 0,
+                                scale: 0,
+                            }}
+                            animate={{
+                                opacity: 1,
+                                scale: 1
+                            }}
+                            transition={{
+                                type: "spring",
+                                duration: 0.7,
+                                delay: 2
+                            }}
+                        >
+                                <motion.span
+                                    className="absolute top-1 right-0"                                             
+                                    animate={{
+                                        rotate: [0, 20, 0, 20, 0],
+                                    }}
+                                    transition={{
+                                        duration: 1,
+                                        ease: "easeInOut",                                
+                                        repeat: Infinity,
+                                        repeatDelay: 1.5,
+                                    }}
+                                >
+                                    👋
+                                </motion.span>
+                            </motion.div>                                      
+                        </motion.div>                 
+                        </div>                                           
+                </div>
+                <motion.div
+                    className="flex flex-col gap-3 mb-20 scroll-mt-28 text-left"
+                    initial={{
+                        opacity: 0
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                    }}
+                    transition={{
+                        duration: 1,
+                    }}
+                    viewport={{
+                        once: true,
+                    }}
+                >
+                    <h1 className="text-left text-5xl">
                         <motion.span
                             className="text-3xl"
                             initial={{ opacity: 0, scale: 0}}
@@ -39,7 +111,7 @@ export default function Intro() {
                             <strong> Chancellor Richey </strong>
                         </motion.span>                    
                     </h1>
-                    <div className="text-2xl">
+                    <div className="text-2xl self-start">
                         <motion.span
                             initial={{ opacity: 0, scale: 0}}
                             animate={{ opacity: 1, scale: 1}}
@@ -62,93 +134,26 @@ export default function Intro() {
                                     deleteSpeed: 50,
                                 }}
                             />
-                        </motion.span>                      
+                        </motion.span>    
                     </div>
-                    <div
-                        className="relative"
-                    >
-                    <motion.div
-                        className="w-[30vmin]"
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{
-                            type: "spring",
-                            duration: 0.7,
-                            delay: 1,
-                        }}
-                    >
-                        <Image
-                            src={introPhoto}
-                            alt="intro photo"
-                            height="828"
-                            width="1472"
-                            className="mt-5 shadow-xl shadow-zinc-700 object-cover rounded-lg"
-                        />
-                    <motion.div
-                        className="absolute top-0 right-0 text-5xl"                
-                        initial={{
-                            opacity: 0,
-                            scale: 0,
-                        }}
-                        animate={{
-                            opacity: 1,
-                            scale: 1
-                        }}
-                        transition={{
-                            type: "spring",
-                            duration: 0.7,
-                            delay: 2
-                        }}
-                    >
-                            <motion.span
-                                className="absolute top-1 right-0"                                             
-                                animate={{
-                                    rotate: [0, 20, 0, 20, 0],
-                                }}
-                                transition={{
-                                    duration: 1,
-                                    ease: "easeInOut",                                
-                                    repeat: Infinity,
-                                    repeatDelay: 1.5,
-                                }}
-                            >
-                                👋
-                            </motion.span>
-                        </motion.div>                                      
-                    </motion.div>                 
-                    </div>
-                </div>                
-                <motion.section
-                    className="flex flex-col items-center justify-center container mb-20 scroll-mt-28"
-                    initial={{
-                        opacity: 0
-                    }}
-                    whileInView={{
-                        opacity: 1,
-                    }}
-                    transition={{
-                        duration: 1,
-                    }}
-                    viewport={{
-                        once: true,
-                    }}
-                >
-                    <h1
-                        className="text-3xl font-semibold mb-10"
-                    >
-                        About Me
-                    </h1>
                     <p
-                        className="text-2xl text-center"
+                        className="text-lg text-left pr-10 mt-10"
                     >
                         I am a M.S. Data Science in Biomedicine student at University of California, Los Angeles (UCLA).
-                        I have recently obtained my B.S. Mathematics of Computation graduate from UCLA.
                         Currently, I work as a Software Engineer Intern at UCLA's International Institute
                         and Mobile Developer at IDONTMIND.
-                        On my free time, I love to learn languages, compete in bowling, and travel!                
                     </p>
-                </motion.section>                                     
-            </div>
+                    <div className="home-icons">
+                        <Button variant="primary" href="www.google.com" target="_blank" style={{ paddingRight: 15, paddingLeft: 15, paddingTop: 10, paddingBottom: 10 }}>
+                            <MdEmail style={{display: "inline-block", marginBottom: 3 }}/> &nbsp;
+                            Contact Me
+                        </Button>
+                        <SocialIcon url="https://www.linkedin.com/in/chancellororichey/" style={{marginLeft: 15 }} />
+                        <SocialIcon url="https://github.com/ChancellorO" style={{marginLeft: 15 }} />
+                    </div>
+
+                </motion.div>
+            </div>            
         </section>
     );
 }
