@@ -44,9 +44,9 @@ export default function Project({
                 once: true,                
             }}            
         >
-            <section className="bg-zinc-800 max-w-[68rem] rounded-lg overflow-hidden relative lg:min-h-[21rem] hover:bg-zinc-700 transition">
+            <section className="bg-zinc-800 max-w-[68rem] rounded-lg overflow-hidden relative lg:min-h-[21rem] hover:bg-zinc-700 transition hover:scale-105">
                 <div className="pt-4 pb-7 px-5 md:pl-10 md:pr-2 md:pt-10 lg:max-w-[50%] flex flex-col h-full">
-                    <h3 className="text-2xl font-semibold mb-4">{title}</h3>
+                    <h3 className="text-2xl font-semibold mb-4 text-center lg:text-left">{title}</h3>
                     <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 mb-3">
                         {description}
                         <br />
@@ -58,12 +58,9 @@ export default function Project({
                 <Image
                 src={image}
                 alt={title}
-                className="absolute lg:block -top-[45px] -right-[45px] w-[28.25rem] rounded-t-lg
-                transition 
+                className="absolute hidden lg:block -top-[45px] -right-[45px] w-[28.25rem] rounded-t-lg
                 lg:scale-[0.8]
-                hover:-translate-x-3
-                hover:translate-y-3
-                hover:-rotate-2
+
                 "
                 />           
             </section>

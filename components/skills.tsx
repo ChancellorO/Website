@@ -30,7 +30,7 @@ export default function Skills() {
             id="skills"
         >
             <h1
-                className="text-3xl font-semibold mb-10"
+                className="text-4xl font-bold mb-10 text-center"
             >
                 Skills
             </h1>

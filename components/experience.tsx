@@ -3,7 +3,6 @@ import React from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { experiences } from "@/lib/data";
-import UCLALogo from "@/public/UCLA-logo.png";
 import Image from "next/image";
 
 
@@ -14,7 +13,7 @@ export default function Experience() {
             className="mb-28 scroll-mt-28"
         >
             <h1 
-            className="text-3xl font-medium mb-8 text-center"
+            className="text-4xl font-bold mb-10 text-center"
             >
                 Experience
             </h1>

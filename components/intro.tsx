@@ -13,14 +13,14 @@ export default function Intro() {
     return(
         <section
             id="home"
-            className="mb-20 lg:px-96 md:px-48"
+            className="mb-20 lg:px-96 md:px-48 transition"
         >
-            <div className="flex flex-row-reverse justify-between">
+            <div className="lg:flex flex-row-reverse justify-between">
                 <div
-                className="flex flex-col px-5 xl:px-0"
+                className="flex flex-col px-5 xl:px-0 mb-10 lg:mb-0"
                 >
                         <motion.div
-                            className="w-[30vmin] relative"
+                            className="lg:w-[30vmin] relative"
                             initial={{ opacity: 0, scale: 0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{
@@ -34,7 +34,7 @@ export default function Intro() {
                                 alt="intro photo"
                                 height="828"
                                 width="1472"
-                                className="mt-5 shadow-xl shadow-zinc-700 object-cover rounded-xl"
+                                className="mx-auto w-[75%] md:w-[100%] mt-5 shadow-xl shadow-zinc-700 object-cover rounded-xl transition"
                             />
                         <motion.div
                             className="absolute top-0 right-0 text-5xl"                
@@ -53,7 +53,7 @@ export default function Intro() {
                             }}
                         >
                                 <motion.span
-                                    className="absolute top-0 right-0"                                             
+                                    className="hidden lg:block md:absolute top-0 right-0"                                             
                                     animate={{
                                         rotate: [0, 20, 0, 20, 0],
                                     }}
@@ -70,7 +70,7 @@ export default function Intro() {
                         </motion.div>                                                        
                 </div>
                 <div
-                    className="flex flex-col gap-3 text-left"
+                    className="flex flex-col gap-3 text-center lg:text-left"
                 >
                     <h1 className="text-5xl">
                         <motion.span
@@ -131,17 +131,14 @@ export default function Intro() {
                         }}
                     >
                         <p
-                            className="text-lg text-left pr-10 mt-10"
+                            className="text-lg text-center lg:text-left px-10 lg:pr-10 lg:pl-0 mt-10"
                         >
                             I am a M.S. Data Science in Biomedicine student at University of California, Los Angeles (UCLA).
                             Currently, I work as a Software Engineer Intern at UCLA&apos;s International Institute
                             and Mobile Developer at IDONTMIND.
                         </p>              
-                        <div className="home-icons">
-                            <Button variant="secondary" href="mailto: chanceorichey@gmail.com" target="_blank" style={{ paddingRight: 15, paddingLeft: 15, paddingTop: 10, paddingBottom: 10 }}>
-                                <MdEmail style={{display: "inline-block", marginBottom: 3 }}/> &nbsp;
-                                Contact Me
-                            </Button>
+                        <div className="mt-5">
+                            <SocialIcon url="mailto: chanceorichey@gmail.com" className="text-zinc-800" />                            
                             <SocialIcon url="https://www.linkedin.com/in/chancellororichey/" style={{marginLeft: 15 }} />
                             <SocialIcon url="https://github.com/ChancellorO" style={{marginLeft: 15 }} />
                         </div>

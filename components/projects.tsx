@@ -23,7 +23,7 @@ export default function Projects() {
             >
                 Projects
             </h1>
-            <div>
+            <div className="px-10 lg:px-0">
                 {projects.map((project, index) => (
                     <React.Fragment key={index}>
                         <Project {...project} />

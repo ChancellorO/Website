@@ -5,7 +5,7 @@ import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-24 px-[5rem]">
+    <main className="flex min-h-screen flex-col items-center justify-between pt-24 lg:px-[5rem]">
       <Intro />
       <Projects />
       <Experience />

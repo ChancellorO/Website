@@ -63,60 +63,55 @@ export const experiences = [
 export const skills = [
     {
         name: "JavaScript",
-        icon: "logos:javascript",
+        icon: "skill-icons:javascript",
     },
     {
-        name: "TypeScript",
-        icon: "logos:typescript-icon",
-      },
-      {
-        name: "React",
-        icon: "logos:react",
-      },
-      {
-        name: "Node.js",
-        icon: "logos:nodejs-icon",
-      },
-      {
-        name: "Python",
-        icon: "logos:python",
-      },
-      {
-        name: "Java",
-        icon: "logos:java",
-      },
-      {
-        name: "HTML",
-        icon: "vscode-icons:file-type-html",
-      },
-      {
-        name: "CSS",
-        icon: "vscode-icons:file-type-css",
-      },
-      {
-        name: "SCSS",
-        icon: "logos:sass",
-      },
-      {
-        name: "Git",
-        icon: "logos:git-icon",
-      },
-      {
-        name: "MySQL",
-        icon: "logos:mysql",
-      },
-      {
-        name: "Linux",
-        icon: "flat-color-icons:linux",
-      },
-      {
-        name: "Docker",
-        icon: "logos:docker-icon",
-      },
-      {
-        name: "C++",
-        icon: "logos:c++-icon"
-      }
-
+      name: "React",
+      icon: "skill-icons:react-dark",
+    },    
+    {
+      name: "TypeScript",
+      icon: "skill-icons:typescript",
+    },
+    {
+      name: "Node.js",
+      icon: "skill-icons:nodejs-dark",
+    },
+    {
+      name: "CSS",
+      icon: "skill-icons:css",
+    },
+    {
+      name: "Java",
+      icon: "skill-icons:java-dark",        
+    },
+    {
+      name: "HTML",
+      icon: "skill-icons:html",
+    },
+    {
+      name: "Python",
+      icon: "skill-icons:python-dark",
+    },
+    {
+      name: "Git",
+      icon: "skill-icons:git",
+    },
+    {
+      name: "MySQL",
+      icon: "skill-icons:mysql-dark",
+    },
+    {
+      name: "CPP",
+      icon: "skill-icons:cpp",
+    },      
+    {
+      name: "Linux",
+      icon: "skill-icons:linux-dark",
+    },
+    {
+      name: "Docker",
+      icon: "skill-icons:docker",
+    },
 ] as const;
 
