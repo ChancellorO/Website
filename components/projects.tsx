@@ -1,19 +1,25 @@
 "use client";
 import { projects } from "@/lib/data";
-import React, { useRef } from "react";
+import React from "react";
 import Project from "@/components/project";
+import { motion } from "framer-motion";
 
 export default function Projects() {
-    const ref = useRef<HTMLDivElement>(null);
 
     return (
-        <section
-            ref={ref}
-            className="scroll-mt-28 mb-28"
+        <motion.section
+            className="scroll-mt-28 mb-20"
             id="projects"
+            initial={{ opacity: 0, scale: 0}}
+            animate={{ opacity: 1, scale: 1}}
+            transition={{
+                type: "spring",
+                duration: 1,
+                delay: 3,
+            }}
         >
             <h1
-                className="text-3xl font-semibold mb-10 text-center"
+                className="text-4xl font-bold mb-10 text-center"
             >
                 Projects
             </h1>
@@ -24,6 +30,6 @@ export default function Projects() {
                     </React.Fragment>
                 ))}                
             </div>
-        </section>
+        </motion.section>
     );
 }

@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import introPhoto from "@/public/intro.jpg";
 import { motion } from "framer-motion";
@@ -12,22 +13,19 @@ export default function Intro() {
     return(
         <section
             id="home"
-            className="mb-20 px-48"
+            className="mb-20 lg:px-96 md:px-48"
         >
             <div className="flex flex-row-reverse justify-between">
                 <div
-                className="flex flex-col items-center justify-center"
+                className="flex flex-col px-5 xl:px-0"
                 >
-                        <div
-                            className="relative"
-                        >
                         <motion.div
-                            className="w-[30vmin]"
+                            className="w-[30vmin] relative"
                             initial={{ opacity: 0, scale: 0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{
                                 type: "spring",
-                                duration: 0.7,
+                                duration: 0.5,
                                 delay: 1,
                             }}
                         >
@@ -55,7 +53,7 @@ export default function Intro() {
                             }}
                         >
                                 <motion.span
-                                    className="absolute top-1 right-0"                                             
+                                    className="absolute top-0 right-0"                                             
                                     animate={{
                                         rotate: [0, 20, 0, 20, 0],
                                     }}
@@ -69,25 +67,12 @@ export default function Intro() {
                                     👋
                                 </motion.span>
                             </motion.div>                                      
-                        </motion.div>                 
-                        </div>                                           
+                        </motion.div>                                                        
                 </div>
-                <motion.div
-                    className="flex flex-col gap-3 mb-20 scroll-mt-28 text-left"
-                    initial={{
-                        opacity: 0
-                    }}
-                    whileInView={{
-                        opacity: 1,
-                    }}
-                    transition={{
-                        duration: 1,
-                    }}
-                    viewport={{
-                        once: true,
-                    }}
+                <div
+                    className="flex flex-col gap-3 text-left"
                 >
-                    <h1 className="text-left text-5xl">
+                    <h1 className="text-5xl">
                         <motion.span
                             className="text-3xl"
                             initial={{ opacity: 0, scale: 0}}
@@ -97,7 +82,7 @@ export default function Intro() {
                                 duration: 1,
                                 delay: 0.2,
                             }}
-                        >Hello, I'm</motion.span>
+                        >Hello, I&apos;m</motion.span>
                         <br/>
                         <motion.span
                             initial={{ opacity: 0, scale: 0}}
@@ -111,7 +96,7 @@ export default function Intro() {
                             <strong> Chancellor Richey </strong>
                         </motion.span>                    
                     </h1>
-                    <div className="text-2xl self-start">
+                    <div className="text-2xl">
                         <motion.span
                             initial={{ opacity: 0, scale: 0}}
                             animate={{ opacity: 1, scale: 1}}
@@ -124,8 +109,8 @@ export default function Intro() {
                             <Typewriter
                                 options={{
                                     strings: [
-                                        "Bowling Enthusiast",
                                         "Software Engineer",
+                                        "Bowling Enthusiast",
                                         "Language Learner",                                    
                                         "Student",
                                     ],
@@ -136,23 +121,32 @@ export default function Intro() {
                             />
                         </motion.span>    
                     </div>
-                    <p
-                        className="text-lg text-left pr-10 mt-10"
+                    <motion.div
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{
+                            type:"linear",
+                            duration: 1,
+                            delay: 3,
+                        }}
                     >
-                        I am a M.S. Data Science in Biomedicine student at University of California, Los Angeles (UCLA).
-                        Currently, I work as a Software Engineer Intern at UCLA's International Institute
-                        and Mobile Developer at IDONTMIND.
-                    </p>
-                    <div className="home-icons">
-                        <Button variant="primary" href="www.google.com" target="_blank" style={{ paddingRight: 15, paddingLeft: 15, paddingTop: 10, paddingBottom: 10 }}>
-                            <MdEmail style={{display: "inline-block", marginBottom: 3 }}/> &nbsp;
-                            Contact Me
-                        </Button>
-                        <SocialIcon url="https://www.linkedin.com/in/chancellororichey/" style={{marginLeft: 15 }} />
-                        <SocialIcon url="https://github.com/ChancellorO" style={{marginLeft: 15 }} />
-                    </div>
-
-                </motion.div>
+                        <p
+                            className="text-lg text-left pr-10 mt-10"
+                        >
+                            I am a M.S. Data Science in Biomedicine student at University of California, Los Angeles (UCLA).
+                            Currently, I work as a Software Engineer Intern at UCLA&apos;s International Institute
+                            and Mobile Developer at IDONTMIND.
+                        </p>              
+                        <div className="home-icons">
+                            <Button variant="secondary" href="mailto: chanceorichey@gmail.com" target="_blank" style={{ paddingRight: 15, paddingLeft: 15, paddingTop: 10, paddingBottom: 10 }}>
+                                <MdEmail style={{display: "inline-block", marginBottom: 3 }}/> &nbsp;
+                                Contact Me
+                            </Button>
+                            <SocialIcon url="https://www.linkedin.com/in/chancellororichey/" style={{marginLeft: 15 }} />
+                            <SocialIcon url="https://github.com/ChancellorO" style={{marginLeft: 15 }} />
+                        </div>
+                    </motion.div>   
+                </div>
             </div>            
         </section>
     );

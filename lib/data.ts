@@ -1,21 +1,25 @@
 import React from "react";
 import UCLALogo from "@/public/UCLA-logo.png";
+import IDONTMINDLogo from "@/public/IDONTMIND.png";
+import COCLogo from "@/public/COC.png";
 import { CgWorkAlt } from "react-icons/cg";
 import AnimeListPhoto from "@/public/animelist.jpg";
 import WeTour from "@/public/Wetour.png";
+import Webserver from "@/public/webserver.png";
+import SustainableEnergy from "@/public/sustainableenergy.png";
 
 export const projects = [
     {
         title: "Sustainable Energy",
         description: "Constructed a series of ML models to identify leading carbon emission with above an 85% accuracy rate. Developed a time forecasting ARIMA model to predict the amount of carbon a country emits in future years.",
         date: "October 2023 - December 2023",
-        image: WeTour,
+        image: SustainableEnergy,
     },
     {
         title: "HTTP Web Server",
         description: "Generated bash scripts to automate integration and unit tests to preserve the integrity of the web server. Adhered to Google's protocols for testing and refactoring, and established a standard for request handlers. Standardized NGINX config file formats and integrated corresponding test cases.",
         date: "March 2023 - June 2023",
-        image: AnimeListPhoto,
+        image: Webserver,
     },
     {
         title: "WeTour",
@@ -45,14 +49,14 @@ export const experiences = [
         company: "IDONTMIND - Contract",
         date: "April 2023 - Present",
         description: "Developing proprietary tools for multiple cultural departments and co-lead developer of a chatbot project. Leading the redesign of the SQL database and conducting codebase refactoring for programs used by 100+ users.",        
-        icon: UCLALogo,
+        icon: IDONTMINDLogo,
     },    
     {
         title: "Computer Science Mentor and Tutor",
         company: "College of the Canyons",
         date: "October 2022 - December 2023",
         description: "Taught 25+ students complex computer science topics regarding Data Structures, Algorithms, and Discrete Structures. Assisted 1st and 2nd year students in finding opportunities outside of academia and prepared them to transfer to four-year universities.",        
-        icon: UCLALogo,        
+        icon: COCLogo,        
     },
 ] as const;
 
@@ -106,13 +110,13 @@ export const skills = [
         icon: "flat-color-icons:linux",
       },
       {
-        name: "AWS",
-        icon: "logos:aws",
-      },
-      {
         name: "Docker",
         icon: "logos:docker-icon",
       },
+      {
+        name: "C++",
+        icon: "logos:c++-icon"
+      }
 
 ] as const;
 

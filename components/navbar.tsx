@@ -13,22 +13,22 @@ export default function Navbar() {
                     </Link>                     
                     </h1>
                 <ul className="text-xl flex items-center gap-7 text-[0.9rem] justify-center">
-                    <li>
+                    <li className="hover:text-zinc-700">
                         <Link href="#about">
                             About Me
                         </Link>                        
                     </li>
-                    <li>
+                    <li className="hover:text-zinc-700">
                         <Link href="#projects">
                             Projects
                         </Link>                        
                     </li>                    
-                    <li>
+                    <li className="hover:text-zinc-700">
                         <Link href="#experience"> 
                             Experience
                         </Link>
                     </li>
-                    <li>
+                    <li className="hover:text-zinc-700">
                         <Link href="#skills">
                             skills
                         </Link>                        
