@@ -5,7 +5,7 @@ import COCLogo from "@/public/COC.png";
 import { CgWorkAlt } from "react-icons/cg";
 import AnimeListPhoto from "@/public/animelist.jpg";
 import WeTour from "@/public/Wetour.png";
-import Webserver from "@/public/webserver.png";
+import Webserver from "@/public/webserver1.png";
 import SustainableEnergy from "@/public/sustainableenergy.png";
 
 export const projects = [
@@ -17,7 +17,7 @@ export const projects = [
     },
     {
         title: "HTTP Web Server",
-        description: "Followed test-driven development, Creating bash scripts for automated testing and developing unit tests using gtest/gmock. Standardized NGINX config file formats and developed corresponding request handlers. Integrated global coding style and constructed documentation to enable readability for potential contributors. Managed a team of 4 students, implementing agile methodologies by setting up sprint meetings and conducting code reviews.",
+        description: "Followed test-driven development, Creating bash scripts for automated testing and developing unit tests using gtest/gmock. Standardized NGINX config file formats and developed corresponding request handlers. Integrated global coding style and constructed documentation to enable readability for potential contributors.",
         date: "March 2023 - June 2023",
         image: Webserver,
     },
