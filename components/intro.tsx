@@ -13,7 +13,7 @@ export default function Intro() {
     return(
         <section
             id="home"
-            className="mb-20 lg:px-96 md:px-48 transition"
+            className="mb-20 md:px-48 transition"
         >
             <div className="lg:flex flex-row-reverse justify-between">
                 <div
@@ -133,7 +133,8 @@ export default function Intro() {
                         <p
                             className="text-lg text-center lg:text-left px-10 lg:pr-10 lg:pl-0 mt-10"
                         >
-                            I am a M.S. Data Science in Biomedicine student at University of California, Los Angeles (UCLA).
+                            I am an incoming M.S. Cyber Security student at New York University for Fall 2024 and
+                            recent Mathematics of Computation graduate at University of California, Los Angeles (UCLA).
                             Currently, I work as a Software Engineer Intern at UCLA&apos;s International Institute
                             and Mobile Developer at IDONTMIND.
                         </p>              

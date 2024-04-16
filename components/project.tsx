@@ -44,10 +44,10 @@ export default function Project({
                 once: true,                
             }}            
         >
-            <section className="bg-zinc-800 max-w-[68rem] rounded-lg overflow-hidden relative lg:min-h-[21rem] hover:bg-zinc-700 transition hover:scale-105">
+            <section className="bg-gray-100 max-w-[58rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative lg:min-h-[21rem] hover:bg-gray-200 transition bg-white/10 hover:bg-white/20">
                 <div className="pt-4 pb-7 px-5 md:pl-10 md:pr-2 md:pt-10 lg:max-w-[50%] flex flex-col h-full">
-                    <h3 className="text-2xl font-semibold mb-4 text-center lg:text-left">{title}</h3>
-                    <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 mb-3">
+                    <h3 className="text-2xl font-semibold mb-4">{title}</h3>
+                    <p className="mt-2 leading-relaxed text-gray-700 text-white/70 mb-3">
                         {description}
                         <br />
                         <br />
