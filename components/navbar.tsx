@@ -40,7 +40,7 @@ export default function Navbar() {
                     </li>
                     <li>
                         <Link href="#skills">
-                            skills
+                            Skills
                         </Link>                        
                     </li>
                 </ul>
