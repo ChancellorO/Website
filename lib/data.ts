@@ -41,7 +41,7 @@ export const experiences = [
       title: "Mobile Developer",
       company: "New York University",
       date: "October 2024 - Present",
-      description: "Constructing a mobile application using react-native to enhance digital outreach for mental health resources.\nCreating responsive pages and developing a RESTful API that manages data from MongoDB.",        
+      description: "Leading the implementation of the front-end with 10+ high-fidelity screens made using React-Native.\nEstablished connections between backend APIs and the frontend, enabling smooth data interactions and user experiences.",        
       icon: NYU,
     },
     {
