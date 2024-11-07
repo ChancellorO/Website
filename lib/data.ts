@@ -1,8 +1,9 @@
 import React from "react";
 import UCLALogo from "@/public/UCLA-logo.png";
 import IDONTMINDLogo from "@/public/IDONTMIND.png";
+import NYU from "@/public/NYU.png";
+import CalPoly from "@/public/CalPoly.png";
 import COCLogo from "@/public/COC.png";
-import { CgWorkAlt } from "react-icons/cg";
 import AnimeListPhoto from "@/public/animelist.jpg";
 import WeTour from "@/public/Wetour.png";
 import Webserver from "@/public/webserver1.png";
@@ -23,7 +24,7 @@ export const projects = [
     },
     {
         title: "WeTour",
-        description: "Created a RESTful API using Django with CRUD operations to store and retrieve local tourist data. Engineered the authorization system to authenticate and preserve user data on PostgresSQL. Developed multiple responsive Django template pages using Tailwind CSS to enhance user experience. Worked with a team of 4 students and presented the project to 20+ senior software engineers and 300+ people.",
+        description: "Facilitated the development of 5+ scalable screens using Django templates and TailwindCSS.\nEngineered the authorization system to authenticate and preserve user data on PostgresSQL.\nWorked with a team of 4 students and presented the project to 20+ senior software engineers and 300+ people.",
         date: "April 2023",
         image: WeTour
     },
@@ -37,18 +38,32 @@ export const projects = [
 
 export const experiences = [
     {
+      title: "Mobile Developer",
+      company: "New York University",
+      date: "October 2024 - Present",
+      description: "Constructing a mobile application using react-native to enhance digital outreach for mental health resources.\nCreating responsive pages and developing a RESTful API that manages data from MongoDB.",        
+      icon: NYU,
+    },
+    {
+      title: "Research Assistant",
+      company: "California Polytechnic State University",
+      date: "May 2024 - October 2024",
+      description: "Designing and Developing an end-to-end allometric dashboard that dynamically generates data analytics from 8 million trees in California's urban forests.\nUsing Django to establish a RESTful API between the dashboard and PostgreSQL database to preprocess allometric data and study correlations between California trees and climate zones.\nSpearheading data visualization by utilizing Scikit-learn, Pandas, Numpy, and ChartJS to highlight allometry equations.",        
+      icon: CalPoly,
+    },
+    {
         title: "Software Engineer Intern",
         company: "University of California, Los Angeles",
-        date: "April 2023 - Present",
-        description: "Developing proprietary tools for cultural departments and conducting codebase refactoring for programs used by 100+ users. Lead developer of a chatbot project, constructing a responsive frontend design and setting up backend logic with OpenAI API. Refactored SQL queries generating data tables, improving query time for the Visitors Bureau SQL Server.",        
+        date: "April 2023 - June 2024",
+        description: "Developed an internal full-stack chatbot using VB.NET, ASP.NET, and OpenAI API to streamline web tool information for 100+ users, improving user experience and accessibility across multiple cultural departments.\nRewrote SQL queries and refactored the Visitors Bureau API, reducing query times for 100,000+ records of Visiting Scholars.\nLed the development of a monthly calendar to centralize and dynamically display cultural events, informing 1000+ UCLA\nstudents across campus.",        
         icon: UCLALogo,
 
     },
     {
         title: "Mobile Developer",
         company: "IDONTMIND - Contract",
-        date: "April 2023 - Present",
-        description: "Constructing a mobile application to enhance digital outreach for mental health resources on IOS and Android devices. Creating responsive frontend pages such as Content Library and Day Challenge using React Native and CSS. Implemented logic for “Recommendation” and “Favorite” features and designed the schema for users in NoSQL database. Developed Backend endpoints and linked them to frontend pages.",        
+        date: "April 2023 - August 2024",
+        description: "Developed 5+ screens and 10+ RESTful APIs to enable seamless data flow of user analytics using React.js and Node.js.\nBuilt the infrastructure for user authentication, authorization and application state using Redux and React Context.\nConstructed the Content Library to centralize tags and dynamically recommend resources based on user's preferences.",        
         icon: IDONTMINDLogo,
     },    
     {
@@ -112,6 +127,14 @@ export const skills = [
     {
       name: "Docker",
       icon: "skill-icons:docker",
+    },
+    {
+      name: "Tailwindcss",
+      icon: "skill-icons:django",
+    },
+    {
+      name: ".NET",
+      icon: "skill-icons:dotnet",
     },
 ] as const;
 

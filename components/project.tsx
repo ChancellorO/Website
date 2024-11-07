@@ -58,7 +58,7 @@ export default function Project({
                 <Image
                 src={image}
                 alt={title}
-                className="absolute hidden lg:block -top-[45px] -right-[45px] w-[28.25rem] rounded-t-lg
+                className="absolute hidden lg:block -top-[50px] -right-[50px] w-[30rem] rounded-t-lg
                 lg:scale-[0.8]
                 "
                 />           
