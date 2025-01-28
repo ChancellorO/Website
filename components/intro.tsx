@@ -133,10 +133,10 @@ export default function Intro() {
                         <p
                             className="text-lg text-center lg:text-left px-10 lg:pr-10 lg:pl-0 mt-10"
                         >
-                            I am a current M.S. Cybersecurity student at New York University (NYU) and
+                            I am a current M.S. Computer Science student at New York University (NYU) and
                             recent Mathematics of Computation graduate at University of California, Los Angeles (UCLA).
-                            Currently, I work as a Mobile Developer at NYU&apos;s Technology, Culture and Society Department
-                            and in my spare time I love learning new languages!
+                            Currently, I work as a Software Developer at NYU&apos; Courant developing new websites! In my spare time
+                            I love to learn new languages!!
                         </p>              
                         <div className="mt-5">
                             <SocialIcon url="mailto: chanceorichey@gmail.com" className="text-zinc-800" />                            

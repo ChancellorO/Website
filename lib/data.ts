@@ -1,4 +1,3 @@
-import React from "react";
 import UCLALogo from "@/public/UCLA-logo.png";
 import IDONTMINDLogo from "@/public/IDONTMIND.png";
 import NYU from "@/public/NYU.png";
@@ -41,11 +40,11 @@ export const experiences = [
       title: "Mobile Developer",
       company: "New York University",
       date: "October 2024 - Present",
-      description: "Leading the implementation of the front-end with 10+ high-fidelity screens made using React-Native.\nEstablished connections between backend APIs and the frontend, enabling smooth data interactions and user experiences.",        
+      description: "Pioneering the integration of Computer Vision algorithms using TensorFlow in a React Native and Django mobile application to catalog the emotional impact of online images and to advance sentiment analysis research. Leveraging AWS s3 for image containerization and building 10+ high-fidelity screens for an immersive user experience.",        
       icon: NYU,
     },
     {
-      title: "Research Assistant",
+      title: "Research Assistant & Full-Stack Developer",
       company: "California Polytechnic State University",
       date: "May 2024 - October 2024",
       description: "Designing and Developing an end-to-end allometric dashboard that dynamically generates data analytics from 8 million trees in California's urban forests.\nUsing Django to establish a RESTful API between the dashboard and PostgreSQL database to preprocess allometric data and study correlations between California trees and climate zones.\nSpearheading data visualization by utilizing Scikit-learn, Pandas, Numpy, and ChartJS to highlight allometry equations.",        
@@ -55,7 +54,7 @@ export const experiences = [
         title: "Software Engineer Intern",
         company: "University of California, Los Angeles",
         date: "April 2023 - June 2024",
-        description: "Developed an internal full-stack chatbot using VB.NET, ASP.NET, and OpenAI API to streamline web tool information for 100+ users, improving user experience and accessibility across multiple cultural departments.\nRewrote SQL queries and refactored the Visitors Bureau API, reducing query times for 100,000+ records of Visiting Scholars.\nLed the development of a monthly calendar to centralize and dynamically display cultural events, informing 1000+ UCLA\nstudents across campus.",        
+        description: "Developed an internal full-stack chatbot using VB.NET, ASP.NET, and OpenAI's API to streamline internal tool information for 100+ users, improving user experience and accessibility across multiple cultural departments. Rewrote SQL queries and refactored the Visitors Bureau API, reducing query times for 100,000+ records of Visiting Scholars. Developed a monthly calendar to centralize and display cultural events, informing 1000+ UCLA students across campus.",        
         icon: UCLALogo,
 
     },
@@ -129,7 +128,7 @@ export const skills = [
       icon: "skill-icons:docker",
     },
     {
-      name: "Tailwindcss",
+      name: "Django",
       icon: "skill-icons:django",
     },
     {
