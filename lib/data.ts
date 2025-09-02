@@ -7,6 +7,7 @@ import AnimeListPhoto from "@/public/animelist.jpg";
 import WeTour from "@/public/Wetour.png";
 import Webserver from "@/public/webserver1.png";
 import SustainableEnergy from "@/public/sustainableenergy.png";
+import AmazonLogo from "@/public/amazon-photo.png";
 
 export const projects = [
     {
@@ -42,6 +43,13 @@ export const experiences = [
       date: "October 2024 - Present",
       description: "Pioneering the integration of Computer Vision algorithms using TensorFlow in a React Native and Django mobile application to catalog the emotional impact of online images and to advance sentiment analysis research. Leveraging AWS s3 for image containerization and building 10+ high-fidelity screens for an immersive user experience.",        
       icon: NYU,
+    },
+    {
+      title: "Software Development Intern",
+      company: "Amazon",
+      date: "June 2025 - August 2025",
+      description: "Built an end-to-end dataset visibility service at Amazon's Selling Partner organization, enabling secure management of sensitive business logic across 20+ services with guardrails, audit history, and client configuration in DynamoDB.",
+      icon: AmazonLogo,
     },
     {
       title: "Research Assistant & Full-Stack Developer",
